@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".activity.CaseActivity">
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="@id/editCaseText"
+        app:layout_constraintStart_toStartOf="@id/editCaseText"
+        app:layout_constraintBottom_toTopOf="@id/editCaseText"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="NEW NOTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="@id/editCaseText2"
+        app:layout_constraintStart_toStartOf="@id/editCaseText2"
+        app:layout_constraintBottom_toTopOf="@id/editCaseText2"
+        android:hint="Задача"
+        android:id="@+id/editCaseText"
+        android:background="@drawable/bg_item_user"
+        android:layout_width="285dp"
+        android:layout_height="42dp"/>
+
+
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/editCaseText2"
+        android:layout_width="285dp"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_item_user"
+        android:ems="10"
+        android:hint="Задача"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:id="@+id/saveButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
